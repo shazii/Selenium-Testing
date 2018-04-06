@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'io.rest-assured:rest-assured:3.0.7'
+    compile 'junit:junit:4.12'
+    compile 'io.rest-assured:json-path:3.0.7'
+    compile 'javax.inject:javax.inject:1'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    compile 'org.json:json:20160212'
+    compile 'org.testng:testng:6.9.6'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
